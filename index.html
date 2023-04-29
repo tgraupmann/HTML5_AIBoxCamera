@@ -1,0 +1,78 @@
+<html>
+
+<head>
+  <title>HTML5 Web Camera</title>
+  <!-- TensorFlow Library: https://www.tensorflow.org/js/tutorials -->
+  <script src="js/tf.min.js"></script>
+  <style>
+    html {
+      background: black;
+      color: white;
+      padding: 20px;
+    }
+
+    body {
+      zoom: 75%;
+    }
+
+    .div-section {
+      padding: 20px;
+    }
+
+    .div-large {
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    .div-header {
+      margin-bottom: 20px;
+    }
+
+    .div-video {
+      border: solid 1px red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div style="display: flex; flex-direction: row; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
+
+    <div id="panelCamera" class="div-section" style="display: flex; flex-direction: column;">
+      <div class="div-large div-header">Camera Source:</div>
+      <select id="cameraSource" style="min-width: 250px; height: 60px; font-size: 2em"></select>
+    </div>
+
+    <div style="display: none">
+      <div class="div-section" style="display: flex; flex-direction: column;">
+        <div class="div-large div-header">Video:</div>
+        <video class="div-video" id="video" width="640" height="480" autoplay></video>
+      </div>
+    </div>
+
+    <div class="div-section" style="display: flex; flex-direction: column;">
+      <div style="display: flex; flex-direction: row;">
+        <div class="div-large div-header">Canvas:</div>
+        <div class="div-large" style="margin-left: 20px">(</div>
+        <div class="div-large" id="divFrames">0</div>
+        <div class="div-large">&nbsp;fps)</div>
+      </div>
+      <canvas class="div-video" id="canvasRender" width="32" height="32"></canvas>
+    </div>
+
+    <div class="div-section" style="display: flex; flex-direction: column;">
+      <div class="div-large div-header">Predictions:</div>
+      <canvas class="div-video" id="canvasPredictions" width="256" height="256"></canvas>
+    </div>
+
+    <div class="div-section" style="display: flex; flex-direction: column;">
+      <div class="div-large div-header">Debug Log:</div>
+      <pre id="debugLog" style="font-size: 1.5em"></pre>
+    </div>
+
+  </div>
+
+  <script src="js/video.js"></script>
+</body>
+
+</html>
