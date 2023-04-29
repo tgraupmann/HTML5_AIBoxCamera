@@ -4,6 +4,8 @@ This is a HTML5 sample for running an AI model in the browser with TensorFlow. T
 
 Note: More training data needs to be added.
 
+* [Demo](https://theylovegames.com/HTML5_AIBoxCamera/)
+
 ## Screenshots
 
 ![image_1](images/image_1.png)
