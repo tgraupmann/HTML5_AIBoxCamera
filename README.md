@@ -9,3 +9,20 @@ Note: More training data needs to be added.
 ## Screenshots
 
 ![image_1](images/image_1.png)
+
+## Dependencies
+
+* [Python](https://www.python.org/)
+
+* TensorFlow JS
+
+```cmd
+pip install tensorflowjs
+```
+
+## Training
+
+```cmd
+cd .\models
+.\train_save_model_0.cmd
+```
