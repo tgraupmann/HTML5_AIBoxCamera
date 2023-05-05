@@ -19,6 +19,7 @@ Note: More training data needs to be added.
 * TensorFlow JS
 
 ```cmd
+python -m pip install --upgrade pip
 pip install tensorflowjs
 ```
 
