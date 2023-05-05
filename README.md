@@ -12,7 +12,7 @@ Note: More training data needs to be added.
 
 ## Dependencies
 
-* [Python 3.8.16 Download](https://www.python.org/downloads/release/python-3816/)
+* [Python Downloads](https://www.python.org/downloads/windows/)
 
 * Note: Use `Python 3.8`. As of February 22nd 2021 TensorFlow is not compatible with `Python 3.9`.
 
