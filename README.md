@@ -14,6 +14,8 @@ Note: More training data needs to be added.
 
 * [Python](https://www.python.org/)
 
+* Note: Downgrade to `Python 3.8`. As of February 22nd 2021 tensorflow is not compatible with `Python 3.9`.
+
 * TensorFlow JS
 
 ```cmd
