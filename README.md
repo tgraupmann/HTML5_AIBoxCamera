@@ -12,13 +12,30 @@ Note: More training data needs to be added.
 
 ## Dependencies
 
+### Windows (WSL2)
+
+* Setup WSL2 Enviroment - [Get started using Python for web development on Windows](https://learn.microsoft.com/en-us/windows/python/web-frameworks)
+
+* Setup Python Environment
+
+```sh
+cd models
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Windows (Native)
+
 * [Python Downloads](https://www.python.org/downloads/windows/)
 
 * Note: Use `Python 3.8`. As of February 22nd 2021 TensorFlow is not compatible with `Python 3.9`.
 
+## TensorFlow Setup
+
 * TensorFlow JS
 
 ```cmd
+cd models
 python -m pip install --upgrade pip
 pip install tensorflowjs
 ```
@@ -26,6 +43,6 @@ pip install tensorflowjs
 ## Training
 
 ```cmd
-cd .\models
+cd models
 .\train_save_model_0.cmd
 ```
