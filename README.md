@@ -16,12 +16,14 @@ Note: More training data needs to be added.
 
 * Setup WSL2 Enviroment - [Get started using Python for web development on Windows](https://learn.microsoft.com/en-us/windows/python/web-frameworks)
 
-* Setup Python Environment
+* Setup Python/TensorFlowJS
 
 ```sh
 cd models
 python3 -m venv .venv
 source .venv/bin/activate
+pip install tensorflowjs
+./train_save_model_0.sh
 ```
 
 ### Windows (Native)
